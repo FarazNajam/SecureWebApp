@@ -57,7 +57,7 @@ module "sql" {
   sql_sku_name        = var.sql_sku_name
   max_size_gb         = 10
   zone_redundant      = false
-  read_scale          = "Disabled"
+  read_scale          = false
 }
 
 
