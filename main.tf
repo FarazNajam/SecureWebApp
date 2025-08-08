@@ -54,7 +54,7 @@ module "sql" {
   location            = var.location
   sql_admin_username  = var.sql_admin_username
   sql_admin_password  = var.sql_admin_password
-  sku_name            = var.sql_sku_name
+  sql_sku_name            = var.sql_sku_name
   max_size_gb         = 10
   zone_redundant      = false
   read_scale          = "Disabled"
