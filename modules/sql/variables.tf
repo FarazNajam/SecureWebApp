@@ -50,6 +50,6 @@ variable "zone_redundant" {
 
 variable "read_scale" {
   description = "Enable read scale"
-  type        = string
+  type        =  bool
   default     = "Disabled"
 }
