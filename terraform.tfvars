@@ -1,0 +1,6 @@
+location      = "australiaeast"
+resource_group = "my-resource-group-test-02"
+tenant_id       = "030ee1c2-db1c-479d-ad66-f781843872b9"
+subscription_id = "87d588f2-2685-46b9-a3d0-f7decd656498"
+sql_sku_name = "S0"
+sql_admin_password = "admin"
