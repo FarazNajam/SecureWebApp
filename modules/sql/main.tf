@@ -9,7 +9,7 @@ resource "azurerm_mssql_server" "sqlserver" {
 }
 
 resource "azurerm_mssql_database" "sqldb" {
-  name       = "${var.name}-db"
+  name       = "${var.sqldb_name}-db"
   server_id  = azurerm_mssql_server.sqlserver.id
   sku_name   = var.sql_sku_name
   max_size_gb = var.max_size_gb
@@ -17,7 +17,4 @@ resource "azurerm_mssql_database" "sqldb" {
   read_scale     = var.read_scale
 }
 
-output "sql_server_name" {
-  value = azurerm_mssql_server.sqlserver.name
-}
 

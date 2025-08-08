@@ -13,6 +13,11 @@ variable "location" {
   type        = string
 }
 
+variable "sqldb_name" {
+  description = "SQL database name"
+  type        = string
+}
+
 variable "sql_admin_username" {
   description = "SQL Server admin username"
   type        = string
