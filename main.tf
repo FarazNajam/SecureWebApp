@@ -19,6 +19,14 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 }
 
+resource "random_string" "suffix" {
+  length  = 6
+  upper   = false
+  number  = true
+  special = false
+}
+
+
 module "app_service" {
   source          = "./modules/app_service"
   app_service_name = "staging-appservice"
