@@ -1,24 +1,9 @@
-variable "vnet_name" {
-  type = string
-}
-
 variable "location" {
   type = string
 }
 
 variable "resource_group" {
   type = string
-}
-
-variable "address_space" {
-  type = list(string)
-}
-
-variable "subnets" {
-  type = list(object({
-    name           = string
-    address_prefix = string
-  }))
 }
 
 variable "tenant_id" {
@@ -32,11 +17,6 @@ variable "subscription_id" {
 variable "key_vault_name" {
   type = string
 }
-
-variable "name" {
-  type = string
-}
-
 
 variable "sql_admin_username" {
   type    = string
