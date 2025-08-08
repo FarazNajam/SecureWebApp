@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 module "app_service" {
-  source          = "../../modules/app_service"
+  source          = "./modules/app_service"
   app_service_name = "staging-appservice"
   location        = var.location
   resource_group  = azurerm_resource_group.rg.name  # pass created RG name
@@ -30,7 +30,7 @@ module "app_service" {
 }
 
 module "key_vault" {
-  source          = "../../modules/key_vault"
+  source          = "./modules/key_vault"
   key_vault_name  = "${var.key_vault_name}-${random_string.suffix.result}-plan"
   location        = var.location
   resource_group = azurerm_resource_group.rg.name  # pass created RG name
