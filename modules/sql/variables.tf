@@ -30,7 +30,7 @@ variable "sql_admin_password" {
   sensitive   = true
 }
 
-variable "sku_name" {
+variable "sql_sku_name" {
   description = "SQL Database SKU (pricing tier)"
   type        = string
   default     = "S0"
