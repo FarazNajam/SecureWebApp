@@ -1,4 +1,4 @@
-variable "name" {
+variable "sqlserver_name" {
   description = "Prefix for naming"
   type        = string
 }
