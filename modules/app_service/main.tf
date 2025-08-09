@@ -3,7 +3,7 @@ resource "azurerm_service_plan" "asp" {
   location            = var.location
   resource_group_name = var.resource_group
 
-  sku_name = "S1"     # e.g. "F1" for Free, "S1" for Standard Small, etc.
+  sku_name = "F1"     # e.g. "F1" for Free, "S1" for Standard Small, etc.
   os_type  = "Windows" # or "Linux"
 }
 
