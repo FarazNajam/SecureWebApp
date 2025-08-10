@@ -67,5 +67,7 @@ data "azurerm_key_vault_secret" "sql_admin_password" {
 
 data "azurerm_key_vault_secret" "sql_admin_username" {
   name         = "SqlAdminUsername"
-  key_vault_id = var.Key_vault_id
+  key_vault_id = var.key_vault_id
 }
+
+#
