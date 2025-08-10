@@ -52,4 +52,3 @@ variable "read_scale" {
   type        =  bool
 }
 
-#
