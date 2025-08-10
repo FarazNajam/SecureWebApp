@@ -18,7 +18,3 @@ variable "app_settings" {
   }
 }
 
-
-variable "key_vault_uri" {
-  type = string
-}
