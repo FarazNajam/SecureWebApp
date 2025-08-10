@@ -1,3 +1,10 @@
+resource "random_string" "suffix" {
+  length  = 6
+  upper   = false
+  number  = true
+  special = false
+}
+
 resource "azurerm_service_plan" "asp" {
   name                = "appserviceplan-${random_string.suffix.result}"
   location            = var.location
