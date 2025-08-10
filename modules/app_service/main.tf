@@ -1,5 +1,5 @@
 resource "azurerm_service_plan" "asp" {
-  name                = "${var.app_service_name}-plan"
+  name                = "appserviceplan-${random_string.suffix.result}"
   location            = var.location
   resource_group_name = var.resource_group
 
@@ -30,4 +30,3 @@ resource "azurerm_app_service" "app" {
 
 }
 
-#
