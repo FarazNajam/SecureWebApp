@@ -70,4 +70,3 @@ data "azurerm_key_vault_secret" "sql_admin_username" {
   key_vault_id = var.key_vault_id
 }
 
-#
