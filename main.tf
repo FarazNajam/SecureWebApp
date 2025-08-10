@@ -33,7 +33,7 @@ module "app_service" {
   location        = var.location
   resource_group  = azurerm_resource_group.rg.name  # pass created RG name
   app_settings    = {
-    "KEYVAULT_URI" = var.key_vault_uri
+    "keyvault_uri" = var.key_vault_uri
   }
 }
 
