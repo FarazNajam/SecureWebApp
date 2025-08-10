@@ -25,7 +25,7 @@ resource "azurerm_app_service" "app" {
   }
 
   app_settings = {
-  "KEYVAULT_SECRET_URI" = "@Microsoft.KeyVault(SecretUri=https://staging-kv.vault.azure.net/secrets/secret-name)"
+  "KEYVAULT_SECRET_URI" = "https://azkeyvaultrg8531.vault.azure.net/"
 }
 
 }
