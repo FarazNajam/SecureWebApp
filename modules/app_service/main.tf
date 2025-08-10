@@ -23,8 +23,9 @@ resource "azurerm_app_service" "app" {
   site_config {
     always_on = true
   }
-  }
+  
 
   identity {
     type = "SystemAssigned"
   }
+}
