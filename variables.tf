@@ -27,14 +27,14 @@ variable "sqlserver_name" {
 }
 
 
-variable "sql_admin_username" {
-  type    = string
-}
+# variable "sql_admin_username" {
+#   type    = string
+# }
 
-variable "sql_admin_password" {
-  type      = string
-  sensitive = true
-}
+# variable "sql_admin_password" {
+#   type      = string
+#   sensitive = true
+# }
 
 variable "sql_sku_name" {
   description = "SQL Database SKU (pricing tier)"
