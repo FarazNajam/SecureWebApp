@@ -44,3 +44,7 @@ variable "sql_sku_name" {
 variable "key_vault_id" {
   default = "/subscriptions/87d588f2-2685-46b9-a3d0-f7decd656498/resourceGroups/azkeyvaultRG8531/providers/Microsoft.KeyVault/vaults/azkeyvaultrg8531"
 }
+
+variable "key_vault_uri" {
+  type = string
+}
