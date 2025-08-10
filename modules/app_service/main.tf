@@ -10,9 +10,15 @@ resource "azurerm_app_service_plan" "asp" {
   location            = var.location
   resource_group_name = var.resource_group
 
-  sku_name = "F1"
-  os_type  = "Windows"
+  sku {
+    tier = "Free"
+    size = "F1"
+  }
+
+  # For Windows, set kind = "Windows"
+  kind = "Windows"
 }
+
 
 resource "azurerm_app_service" "app" {
   name                = var.app_service_name
