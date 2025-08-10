@@ -18,13 +18,12 @@ variable "sqldb_name" {
   type        = string
 }
 
-variable "sql_admin_username" {
+variable "sqladminusername" {
   description = "SQL Server admin username"
   type        = string
-  default     = "sqladminuser"
 }
 
-variable "sql_admin_password" {
+variable "sqladminpassword" {
   description = "SQL Server admin password"
   type        = string
   sensitive   = true
@@ -52,3 +51,5 @@ variable "read_scale" {
   description = "Enable read scale"
   type        =  bool
 }
+
+#
